@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Career Lab | Take-Home Assignment 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the take home assignment that Collabies will complete before the technical review for Career Lab. 
 
-## Available Scripts
+Please fork this repo, complete the assignment, and once you are finished, send a link to your repo to the Collab Lab mentor that will be conducting your technical interview. 
 
-In the project directory, you can run:
 
-### `yarn start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Exercise: Formatting Text
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Create a new React app for formatting text into paragraphs. It should accept input text, and should output the formatted text. For example, if you input the following text:
+```
+This is
+a badly formatted file. This line is pretty long! It's way more than 80 characters! I feel a line wrap coming on!
 
-### `yarn test`
+This      is a second paragraph with extraneous whitespace.
+```
+Running formatter tool should output the following:
+```
+This is a badly formatted file. This line is pretty long! It's way more than 80
+characters! I feel a line wrap coming on!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This is a second paragraph with extraneous whitespace.
+```
+The formatting should follow these rules:
+- Lines should not exceed 80 characters.
+- If the 81st character of a line is in the middle of the word, break the line on the closest previous space.
+- If a single word exceeds 80 characters, leave that word intact on a line by itself (this is an exception to the 80-character-per-line limit).
+- One blank line between paragraphs.
+- No more than one consecutive space or blank line in the formatted text -- collapse multiples into a single space or line.
 
-### `yarn build`
+You may use a testing library you like, but the main code must not require any additional libraries or resources beyond the standard built-in libraries. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Your code will be evaluated on three criteria:
+- Correctness: Does it follow all the instructions?
+- Code Quality: Is it readable and well structured?
+- Idiomatic Code Style: Does it follow the stylistic conventions of the language, such as indentation and capitalization?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
