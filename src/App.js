@@ -1,9 +1,10 @@
 import './App.css';
+import React from "react";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header>
         <h1>Career Lab | Take-Home Assignment</h1>
       </header>
       <form>
