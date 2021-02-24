@@ -4,6 +4,13 @@ This is the take home assignment that Collabies will complete before the technic
 
 Please fork this repo, complete the assignment, and once you are finished, send a link to your repo to the Collab Lab mentor that will be conducting your technical interview. 
 
+---
+
+## How-to
+
+1. Clone your fork of this repo to your local machine: `git clone <url of repo>`
+2. In the project directory, run `npm install && npm start`
+3. Open the project at [localhost:3000](http://localhost:3000)
 
 ---
 
