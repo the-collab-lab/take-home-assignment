@@ -10,11 +10,23 @@ header {
 }
 
 form {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    margin: 1rem auto;
+    max-width: 800px;
     padding: 0 20px;
 }
 
 textarea {
-    width: 99%;
+    height: 4rem;
+    width: 100%;
+}
+
+#result {
+    border: solid 1px #282c34;
+    height: auto;
+    margin: 1rem auto;
+    max-width: 800px;
+    overflow: auto;
+    padding: 1rem;
+    text-align: left;
+    white-space: pre;
 }
