@@ -8,9 +8,10 @@ Please fork this repo, complete the assignment, and once you are finished, send 
 
 ## How-to
 
-1. Clone your fork of this repo to your local machine: `git clone <url of repo>`
-2. In the project directory, run `npm install && npm start`
-3. Open the project at [localhost:3000](http://localhost:3000)
+1. Fork this repo.
+2. Clone your fork to your local machine: `git clone <url of your repo>`
+3. In the project directory, run `npm install && npm start`
+4. Open the project at [localhost:3000](http://localhost:3000)
 
 ---
 
@@ -43,5 +44,4 @@ Your code will be evaluated on three criteria:
 - Correctness: Does it follow all the instructions?
 - Code Quality: Is it readable and well structured?
 - Idiomatic Code Style: Does it follow the stylistic conventions of the language, such as indentation and capitalization?
-
 
