@@ -4,6 +4,16 @@ This is the take home assignment that Collabies will complete before the technic
 
 Please fork this repo, complete the assignment, and once you are finished, send a link to your repo to the Collab Lab mentor that will be conducting your technical interview. 
 
+---
+
+## How-to
+
+1. Fork this repo.
+![Fork button on Github](https://cdn.zappy.app/b2897d9afa278e5019c028d809e96b23.png)
+2. Clone your fork to your local machine: `git clone <url of your repo>`
+![Repo URL for cloning on Github](https://cdn.zappy.app/fddb551fe494bfc18d18e3009c455b30.png)
+3. In the project directory, run `npm install && npm start`
+4. Open the project at [localhost:3000](http://localhost:3000)
 
 ---
 
@@ -36,5 +46,3 @@ Your code will be evaluated on three criteria:
 - Correctness: Does it follow all the instructions?
 - Code Quality: Is it readable and well structured?
 - Idiomatic Code Style: Does it follow the stylistic conventions of the language, such as indentation and capitalization?
-
-
