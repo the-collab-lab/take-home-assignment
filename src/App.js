@@ -2,17 +2,29 @@ import './App.css';
 import React from "react";
 
 function App() {
-  const [textInput, setTextInput] = React.useState("")
-  const [formattedText, setFormattedText] = React.useState(null)
-  const handleChange = (event) => {
-    setTextInput(event.target.value);
-  }
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setFormattedText(textInput)
-    setTextInput("")
-  }
+  const [textInput, setTextInput] = React.useState(`This is
+a badly formatted file. This line is pretty long! It's way more than 80 characters! I feel a line wrap coming on!
 
+This      is a second paragraph with extraneous whitespace.`);
+  const [textOutput, setTextOutput] = React.useState('');
+
+  const handleChange = event => {
+    setTextInput(event.target.value);
+  };
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    transformText(textInput);
+  };
+
+  const transformText = input => {
+    let output = input;
+    /*
+    your work goes here!
+    */
+    setTextOutput(output);
+  }
+  
   return (
     <div className="App">
       <header>
@@ -24,7 +36,9 @@ function App() {
         </label>
         <input type="submit" value="Submit"/>
       </form>
-      {formattedText && <div>{formattedText}</div>}
+      <div id="result">
+        {textOutput}
+      </div>
     </div>
   );
 }
