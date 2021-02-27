@@ -11,6 +11,7 @@ Please fork this repo, complete the assignment, and once you are finished, send 
 1. Fork this repo.
 ![Fork button on Github](https://cdn.zappy.app/b2897d9afa278e5019c028d809e96b23.png)
 2. Clone your fork to your local machine: `git clone <url of your repo>`
+![Repo URL for cloning on Github](https://cdn.zappy.app/fddb551fe494bfc18d18e3009c455b30.png)
 3. In the project directory, run `npm install && npm start`
 4. Open the project at [localhost:3000](http://localhost:3000)
 
