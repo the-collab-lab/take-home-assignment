@@ -1,8 +1,8 @@
-# Career Lab | Take-Home Assignment 
+# Career Lab | Take-Home Assignment
 
-This is the take home assignment that Collabies will complete before the technical review for Career Lab. 
+This is the take home assignment that Collabies will complete before the technical review for Career Lab.
 
-Please fork this repo, complete the assignment, and once you are finished, send a link to your repo to the Collab Lab mentor that will be conducting your technical interview. 
+Please fork this repo, complete the assignment, and once you are finished, send a link to your repo to the Collab Lab mentor that will be conducting your technical interview.
 
 ---
 
@@ -19,28 +19,22 @@ Please fork this repo, complete the assignment, and once you are finished, send 
 
 ## Exercise: Formatting Text
 
-Create a new React app for formatting text into paragraphs. It should accept input text, and should output the formatted text. For example, if you input the following text:
-```
-This is
-a badly formatted file. This line is pretty long! It's way more than 80 characters! I feel a line wrap coming on!
+Create a new React app for formatting text. It should have two modes: one that changes every letter to uppercase and one that changes every letter to lowercase. Create a UI to select/switch between these two modes.
 
-This      is a second paragraph with extraneous whitespace.
+For example, if we had the following as input:
 ```
-Running formatter tool should output the following:
+This is some text.
 ```
-This is a badly formatted file. This line is pretty long! It's way more than 80
-characters! I feel a line wrap coming on!
+Submitting the form in the uppercase mode should output the following:
+```
+THIS IS SOME TEXT.
+```
+And submitting the form in the lowercase mode should output the following:
+```
+this is some text.
+```
 
-This is a second paragraph with extraneous whitespace.
-```
-The formatting should follow these rules:
-- Lines should not exceed 80 characters.
-- If the 81st character of a line is in the middle of the word, break the line on the closest previous space.
-- If a single word exceeds 80 characters, leave that word intact on a line by itself (this is an exception to the 80-character-per-line limit).
-- One blank line between paragraphs.
-- No more than one consecutive space or blank line in the formatted text -- collapse multiples into a single space or line.
-
-You may use a testing library you like, but the main code must not require any additional libraries or resources beyond the standard built-in libraries. 
+If you add testing, you may use a testing library you like, but the main code must not require any additional libraries or resources beyond the standard built-in libraries.
 
 Your code will be evaluated on three criteria:
 - Correctness: Does it follow all the instructions?
