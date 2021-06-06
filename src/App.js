@@ -2,16 +2,22 @@ import './App.css';
 import React from "react";
 
 function App() {
-  const [textInput, setTextInput] = React.useState('Here is some example text.');
+  const [textInput, setTextInput] = React.useState('Here is Some Example Text.');
   const [textOutput, setTextOutput] = React.useState('');
 
   const handleChange = event => {
     setTextInput(event.target.value);
   };
 
+  const handleUppercase = event => {
+    setTextOutput(textInput.toUpperCase())
+  };
+  const handleLowercase = event => {
+    setTextOutput(textInput.toLowerCase())
+  };
+
   const handleSubmit = event => {
     event.preventDefault();
-    setTextOutput('Your formatted text will go here!')
   };
 
   return (
@@ -23,7 +29,12 @@ function App() {
         <label>
           <textarea onChange={handleChange} value={textInput}/>
         </label>
-        <input type="submit" value="Submit"/>
+        <button onClick={handleUppercase}>
+          Change to UPPERCASE
+        </button>
+        <button onClick={handleLowercase}>
+          Change to lowercase
+        </button>
       </form>
       <div id="result">
         {textOutput}
