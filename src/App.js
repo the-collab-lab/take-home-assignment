@@ -29,12 +29,15 @@ function App() {
       <header>
         <h1>Career Lab | Take-Home Assignment</h1>
       </header>
+      {/* Does this form need some more accessibility considerations? */}
+      {/* The form is currently labelled implicitly and I think explicitly is better. */}
       <form onSubmit={handleSubmit}>
         <label>
           <textarea onChange={handleChange} value={textInput} />
         </label>
         <input type="submit" value="Submit" />
       </form>
+      {/* Is a <div> here for textOutput without a <p> tag or some other element as accessible and semantic? */}
       <div id="result">{textOutput}</div>
       {/* Create a UI to select/switch between these two modes. */}
       {/* Create two buttons, one that handles upper-casing textOutput and the other that handles lower-casing textOutput */}
