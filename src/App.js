@@ -1,17 +1,19 @@
-import './App.css';
+import "./App.css";
 import React from "react";
 
 function App() {
-  const [textInput, setTextInput] = React.useState('Here is some example text.');
-  const [textOutput, setTextOutput] = React.useState('');
+  const [textInput, setTextInput] = React.useState(
+    "Here is some example text."
+  );
+  const [textOutput, setTextOutput] = React.useState("");
 
-  const handleChange = event => {
+  const handleChange = (event) => {
     setTextInput(event.target.value);
   };
 
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     event.preventDefault();
-    setTextOutput('Your formatted text will go here!')
+    setTextOutput("Your formatted text will go here!");
   };
 
   return (
@@ -21,13 +23,14 @@ function App() {
       </header>
       <form onSubmit={handleSubmit}>
         <label>
-          <textarea onChange={handleChange} value={textInput}/>
+          <textarea onChange={handleChange} value={textInput} />
         </label>
-        <input type="submit" value="Submit"/>
+        <input type="submit" value="Submit" />
       </form>
-      <div id="result">
-        {textOutput}
-      </div>
+      <div id="result">{textOutput}</div>
+      {/* Create a UI to select/switch between these two modes. */}
+      {/* Create two buttons, one that handles upper-casing textOutput and the other that handles lower-casing textOutput */}
+      {/* Could be nice to have a button that also that clears textInput */}
     </div>
   );
 }
