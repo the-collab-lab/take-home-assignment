@@ -1,7 +1,9 @@
 import "./App.css";
+// refactor to the descructed import {useState} from "react" because it's more familiar to me
 import React from "react";
 
 function App() {
+  // refactor calling useState without referencing React here
   const [textInput, setTextInput] = React.useState(
     "Here is some example text."
   );
