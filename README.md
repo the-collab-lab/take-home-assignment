@@ -8,12 +8,14 @@ Please fork this repo, complete the assignment, and once you are finished, send 
 
 ## How-to
 
-1. Grab the template
-   ![Fork button on Github](https://cdn.zappy.app/b2897d9afa278e5019c028d809e96b23.png)
-2. Clone your fork to your local machine: `git clone <url of your repo>`
+1. Select the Use This Template option
+   <!-- template image url placeholder -->
+2. Create a new repository from take-home-assignment
+<!-- new repository image url placeholder -->
+3. Clone your fork to your local machine: `git clone <url of your repo>`
    ![Repo URL for cloning on Github](https://cdn.zappy.app/fddb551fe494bfc18d18e3009c455b30.png)
-3. In the project directory, run `npm install && npm start`
-4. Open the project at [localhost:3000](http://localhost:3000)
+4. In the project directory, run `npm install && npm start`
+5. Open the project at [localhost:3000](http://localhost:3000)
 
 ---
 
