@@ -13,7 +13,7 @@ Please fork this repo, complete the assignment, and once you are finished, send 
 2. Create a new repository from take-home-assignment
    ![tcl-template-new-repo](https://user-images.githubusercontent.com/47455758/121204349-73b88e80-c83c-11eb-83be-bf35f0d814be.jpg)
 3. Clone your fork to your local machine: `git clone <url of your repo>`
-   ![Repo URL for cloning on Github](https://cdn.zappy.app/fddb551fe494bfc18d18e3009c455b30.png)
+   ![tcl-template-clone](https://user-images.githubusercontent.com/47455758/121205567-6354e380-c83d-11eb-8422-90b9f1db4597.jpg)
 4. In the project directory, run `npm install && npm start`
 5. Open the project at [localhost:3000](http://localhost:3000)
 
