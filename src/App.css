@@ -1,32 +1,42 @@
-.App {
-    text-align: center;
-}
-
 header {
-    background-color: #282c34;
-    color: white;
-    margin-bottom: 20px;
-    padding: 20px 0;
+  background-color: #282c34;
+  color: white;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  text-align: center;
 }
 
-form {
+main {
     margin: 1rem auto;
     max-width: 800px;
     padding: 0 20px;
 }
 
-textarea {
-    height: 4rem;
+.form-control > * + *,
+.form-control__radio + .form-control__radio {
+    margin-top: 0.5rem;
+}
+
+.form-control__text > label {
+    display: table;
+}
+
+.result-wrapper {
+    margin-top: 6rem;
+}
+
+textarea,
+output {
     width: 100%;
+    height: 6.4rem;
 }
 
 #result {
+    display: block;
     border: solid 1px #282c34;
-    height: auto;
-    margin: 1rem auto;
     max-width: 800px;
     overflow: auto;
-    padding: 1rem;
+    padding: 1.6rem;
     text-align: left;
     white-space: pre;
 }
