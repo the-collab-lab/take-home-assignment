@@ -19,15 +19,27 @@ function App() {
       <header>
         <h1>Career Lab | Take-Home Assignment</h1>
       </header>
-      <form onSubmit={handleSubmit}>
-        <label>
-          <textarea onChange={handleChange} value={textInput}/>
-        </label>
-        <input type="submit" value="Submit"/>
-      </form>
-      <div id="result">
-        {textOutput}
-      </div>
+      <main>
+        <form onSubmit={handleSubmit}>
+          <div className="form-control form-control__text">
+            <label for="text">Text to be formatted:</label>
+            <textarea id="text" onChange={handleChange} value={textInput} />
+          </div>
+          <div className="form-control form-control__radio">
+            <input type="radio" name="conversion" id="conversion-0" />
+            <label for="conversion-0">&nbsp;Convert text to lowercase</label>
+          </div>
+          <div className="form-control form-control__radio">
+            <input type="radio" name="conversion" id="conversion-1" />
+            <label for="conversion-1">&nbsp;Convert text to uppercase</label>
+          </div>
+          <input type="submit" value="Submit" />
+        </form>
+        <div className="result-wrapper form-control form-control__text">
+          <label for="result">Formatted text:</label>
+          <output id="result">{textOutput}</output>
+        </div>
+      </main>
     </div>
   );
 }
