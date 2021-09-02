@@ -3,9 +3,14 @@ import React from "react";
 
 function App() {
   const [textInput, setTextInput] = React.useState('Here is some example text.');
+	const [conversionMode, setConversionMode] = React.useState('lowercase');
   const [textOutput, setTextOutput] = React.useState('');
 
-  const handleChange = event => {
+	const handleRadioChange = event => {
+		setConversionMode(event.target.value);
+	}
+
+  const handleTextareaChange = event => {
     setTextInput(event.target.value);
   };
 
@@ -23,14 +28,32 @@ function App() {
         <form onSubmit={handleSubmit}>
           <div className="form-control form-control__text">
             <label for="text">Text to be formatted:</label>
-            <textarea id="text" onChange={handleChange} value={textInput} />
+            <textarea
+              id="text"
+              onChange={handleTextareaChange}
+              value={textInput}
+            />
           </div>
           <div className="form-control form-control__radio">
-            <input type="radio" name="conversion" id="conversion-0" />
+            <input
+              type="radio"
+              name="conversion"
+              id="conversion-0"
+              value="lowercase"
+              checked={conversionMode === "lowercase"}
+              onChange={handleRadioChange}
+            />
             <label for="conversion-0">&nbsp;Convert text to lowercase</label>
           </div>
           <div className="form-control form-control__radio">
-            <input type="radio" name="conversion" id="conversion-1" />
+            <input
+              type="radio"
+              name="conversion"
+              id="conversion-1"
+              value="uppercase"
+              checked={conversionMode === "uppercase"}
+              onChange={handleRadioChange}
+            />
             <label for="conversion-1">&nbsp;Convert text to uppercase</label>
           </div>
           <input type="submit" value="Submit" />
