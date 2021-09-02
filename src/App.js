@@ -26,7 +26,7 @@ function App() {
       </header>
         <form onSubmit={handleSubmit}>
           <div className="form-control form-control__text">
-            <label for="text">Text to be formatted:</label>
+            <label htmlFor="text">Text to be formatted:</label>
             <textarea
               id="text"
               onChange={handleTextareaChange}
@@ -42,7 +42,7 @@ function App() {
               checked={conversionMode === "lowercase"}
               onChange={handleRadioChange}
             />
-            <label for="conversion-0">&nbsp;Convert text to lowercase</label>
+            <label htmlFor="conversion-0">&nbsp;Convert text to lowercase</label>
           </div>
           <div className="form-control form-control__radio">
             <input
@@ -53,11 +53,11 @@ function App() {
               checked={conversionMode === "uppercase"}
               onChange={handleRadioChange}
             />
-            <label for="conversion-1">&nbsp;Convert text to uppercase</label>
+            <label htmlFor="conversion-1">&nbsp;Convert text to uppercase</label>
           </div>
           <input type="submit" value="Submit" />
           <div className="result-wrapper form-control form-control__text">
-            <label for="result">Formatted text:</label>
+            <label htmlFor="result">Formatted text:</label>
             <output id="result">{textOutput}</output>
           </div>
         </form>
