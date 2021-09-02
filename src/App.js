@@ -24,7 +24,6 @@ function App() {
       <header>
         <h1>Career Lab | Take-Home Assignment</h1>
       </header>
-      <main>
         <form onSubmit={handleSubmit}>
           <div className="form-control form-control__text">
             <label for="text">Text to be formatted:</label>
@@ -57,12 +56,11 @@ function App() {
             <label for="conversion-1">&nbsp;Convert text to uppercase</label>
           </div>
           <input type="submit" value="Submit" />
+          <div className="result-wrapper form-control form-control__text">
+            <label for="result">Formatted text:</label>
+            <output id="result">{textOutput}</output>
+          </div>
         </form>
-        <div className="result-wrapper form-control form-control__text">
-          <label for="result">Formatted text:</label>
-          <output id="result">{textOutput}</output>
-        </div>
-      </main>
     </div>
   );
 }
