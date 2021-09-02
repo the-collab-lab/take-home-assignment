@@ -3,12 +3,12 @@ import React from "react";
 
 function App() {
   const [textInput, setTextInput] = React.useState('Here is some example text.');
-	const [conversionMode, setConversionMode] = React.useState('lowercase');
+  const [conversionMode, setConversionMode] = React.useState('lowercase');
   const [textOutput, setTextOutput] = React.useState('');
 
-	const handleRadioChange = event => {
-		setConversionMode(event.target.value);
-	}
+  const handleRadioChange = event => {
+    setConversionMode(event.target.value);
+  }
 
   const handleTextareaChange = event => {
     setTextInput(event.target.value);
