@@ -29,16 +29,16 @@ form {
 
 textarea,
 output {
-	font-size: 1.4rem;
-  width: 100%;
+  border: solid 1px #282c34;
+  font-size: 1.4rem;
   height: 8.6rem;
   padding: 0.75rem;
+  width: 100%;
 
 }
 
 #result {
   display: block;
-  border: solid 1px #282c34;
   overflow: auto;
   text-align: left;
   white-space: pre;
