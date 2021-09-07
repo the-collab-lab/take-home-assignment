@@ -1,32 +1,49 @@
-.App {
-    text-align: center;
-}
-
 header {
-    background-color: #282c34;
-    color: white;
-    margin-bottom: 20px;
-    padding: 20px 0;
+  background-color: #282c34;
+  color: white;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+  text-align: center;
 }
 
 form {
-    margin: 1rem auto;
-    max-width: 800px;
-    padding: 0 20px;
+  margin: 1.6rem auto;
+  max-width: 80rem;
+  max-width: 68ch;
+  padding: 0 2rem;
 }
 
-textarea {
-    height: 4rem;
-    width: 100%;
+.form-control > * + *,
+.form-control__radio + .form-control__radio {
+  margin-top: 0.5rem;
+}
+
+.form-control__radio > label {
+	margin-left: 4px;
+}
+
+.form-control__text > label {
+  display: table;
+  font-weight: 500;
+}
+
+.result-wrapper {
+  margin-top: 6rem;
+}
+
+textarea,
+output {
+  border: solid 1px #282c34;
+  font-size: 1.4rem;
+  height: 8.6rem;
+  padding: 0.75rem;
+  width: 100%;
+
 }
 
 #result {
-    border: solid 1px #282c34;
-    height: auto;
-    margin: 1rem auto;
-    max-width: 800px;
-    overflow: auto;
-    padding: 1rem;
-    text-align: left;
-    white-space: pre;
+  display: block;
+  overflow: auto;
+  text-align: left;
+  white-space: pre;
 }
