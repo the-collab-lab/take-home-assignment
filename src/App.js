@@ -42,7 +42,7 @@ function App() {
               checked={conversionMode === "lowercase"}
               onChange={handleRadioChange}
             />
-            <label htmlFor="conversion-0">&nbsp;Convert text to lowercase</label>
+            <label htmlFor="conversion-0">Convert text to lowercase</label>
           </div>
           <div className="form-control form-control__radio">
             <input
@@ -53,7 +53,7 @@ function App() {
               checked={conversionMode === "uppercase"}
               onChange={handleRadioChange}
             />
-            <label htmlFor="conversion-1">&nbsp;Convert text to uppercase</label>
+            <label htmlFor="conversion-1">Convert text to uppercase</label>
           </div>
           <input type="submit" value="Submit" />
           <div className="result-wrapper form-control form-control__text">

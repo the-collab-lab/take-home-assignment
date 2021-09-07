@@ -18,6 +18,10 @@ form {
   margin-top: 0.5rem;
 }
 
+.form-control__radio > label {
+	margin-left: 4px;
+}
+
 .form-control__text > label {
   display: table;
   font-weight: 500;
