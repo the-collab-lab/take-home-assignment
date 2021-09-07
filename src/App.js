@@ -22,11 +22,11 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Career Lab | Take-Home Assignment</h1>
+        <h1>Career Lab text-case converter</h1>
       </header>
         <form onSubmit={handleSubmit}>
           <div className="form-control form-control__text">
-            <label htmlFor="text">Text to be formatted:</label>
+            <label htmlFor="text">Text to be converted:</label>
             <textarea
               id="text"
               onChange={handleTextareaChange}
@@ -57,7 +57,7 @@ function App() {
           </div>
           <input type="submit" value="Submit" />
           <div className="result-wrapper form-control form-control__text">
-            <label htmlFor="result">Formatted text:</label>
+            <label htmlFor="result">Converted text:</label>
             <output id="result">{textOutput}</output>
           </div>
         </form>
