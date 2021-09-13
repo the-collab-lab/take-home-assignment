@@ -16,7 +16,11 @@ function App() {
 
   const handleSubmit = event => {
     event.preventDefault();
-    setTextOutput('Your formatted text will go here!')
+    if (conversionMode === 'lowercase') {
+      setTextOutput(textInput.toLowerCase())
+    } else {
+      setTextOutput(textInput.toUpperCase())
+    }
   };
 
   return (
@@ -56,7 +60,7 @@ function App() {
             <label htmlFor="conversion-1">Convert text to uppercase</label>
           </div>
           <input type="submit" value="Submit" />
-          <div className="result-wrapper form-control form-control__text">
+          <div className="result-wrapper form-control form-control__text" role="alert">
             <label htmlFor="result">Converted text:</label>
             <output id="result">{textOutput}</output>
           </div>
