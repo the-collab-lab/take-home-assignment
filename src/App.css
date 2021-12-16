@@ -22,28 +22,23 @@ form {
 	margin-left: 4px;
 }
 
+.form-control__text > textarea {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 .form-control__text > label {
   display: table;
   font-weight: 500;
 }
 
-.result-wrapper {
-  margin-top: 6rem;
-}
-
-textarea,
-output {
-  border: solid 1px #282c34;
-  font-size: 1.4rem;
-  height: 8.6rem;
-  padding: 0.75rem;
-  width: 100%;
-
-}
-
-#result {
+.result {
   display: block;
   overflow: auto;
   text-align: left;
   white-space: pre;
+}
+
+.u-mt-3 {
+  margin-top: 3rem;
 }
