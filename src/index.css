@@ -26,13 +26,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-input[type="submit"] {
+button {
   font-family: inherit;
   font-size: 100%;
   line-height: inherit;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+textarea,
+output {
+  border: solid 1px #282c34;
+  font-size: 1.4rem;
+  height: 8.6rem;
+  padding: 0.75rem;
+  width: 100%;
 }
