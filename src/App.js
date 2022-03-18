@@ -15,9 +15,11 @@ function App() {
   };
 
   const handleSubmit = event => {
-    event.preventDefault();
-    setTextOutput('Your formatted text will go here!')
-  };
+    event.preventDefault()
+    conversionMode === "uppercase"
+      ? setTextOutput(textInput.toUpperCase())
+      : setTextOutput(textInput.toLowerCase())
+  }
 
   return (
     <div className="App">
@@ -26,11 +28,12 @@ function App() {
       </header>
       <form onSubmit={handleSubmit}>
         <div className="form-control form-control__text">
-          <label htmlFor="text">Text to be converted:</label>
+          <label htmlFor="text-input">Text to be converted:</label>
           <textarea
-            id="text"
+            id="text-input"
             onChange={handleTextareaChange}
             value={textInput}
+            name="text-input"
           />
         </div>
         <div className="form-control form-control__radio">
