@@ -1,10 +1,10 @@
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 
 function App() {
-  const [textInput, setTextInput] = React.useState('Here is some example text.');
-  const [conversionMode, setConversionMode] = React.useState('lowercase');
-  const [textOutput, setTextOutput] = React.useState('');
+  const [textInput, setTextInput] = useState('Here is some example text.');
+  const [conversionMode, setConversionMode] = useState('lowercase');
+  const [textOutput, setTextOutput] = useState('');
 
   const handleRadioChange = event => {
     setConversionMode(event.target.value);
