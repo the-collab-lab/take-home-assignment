@@ -6,17 +6,21 @@ function App() {
   const [conversionMode, setConversionMode] = useState('lowercase');
   const [textOutput, setTextOutput] = useState('');
 
-  const handleRadioChange = event => {
+  const handleRadioChange = (event) => {
     setConversionMode(event.target.value);
   }
 
-  const handleTextareaChange = event => {
+  const handleTextareaChange = (event) => {
     setTextInput(event.target.value);
   };
 
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     event.preventDefault();
-    setTextOutput('Your formatted text will go here!')
+    if (conversionMode === 'lowercase') {
+      setTextOutput(textInput.toLowerCase());
+    } else {
+      setTextOutput(textInput.toUpperCase());
+    }
   };
 
   return (
@@ -55,7 +59,7 @@ function App() {
           />
           <label htmlFor="conversion-1">Convert text to uppercase</label>
         </div>
-        <button type="button">Submit</button>
+        <button type="submit">Submit</button>
         <div className="form-control form-control__text u-mt-3">
           <label htmlFor="result">Converted text:</label>
           <output id="result" class="result">{textOutput}</output>
