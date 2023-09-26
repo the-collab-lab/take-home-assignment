@@ -1,14 +1,14 @@
-import './App.css';
-import React, { useState } from 'react';
+import "./App.css";
+import React, { useState } from "react";
 
 function App() {
-  const [textInput, setTextInput] = useState('Here is some example text.');
-  const [conversionMode, setConversionMode] = useState('lowercase');
-  const [textOutput, setTextOutput] = useState('');
+  const [textInput, setTextInput] = useState("Here is some example text.");
+  const [conversionMode, setConversionMode] = useState("lowercase");
+  const [textOutput, setTextOutput] = useState("");
 
   const handleRadioChange = (event) => {
     setConversionMode(event.target.value);
-  }
+  };
 
   const handleTextareaChange = (event) => {
     setTextInput(event.target.value);
@@ -16,7 +16,7 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (conversionMode === 'lowercase') {
+    if (conversionMode === "lowercase") {
       setTextOutput(textInput.toLowerCase());
     } else {
       setTextOutput(textInput.toUpperCase());
@@ -62,7 +62,9 @@ function App() {
         <button type="submit">Submit</button>
         <div className="form-control form-control__text u-mt-3">
           <label htmlFor="result">Converted text:</label>
-          <output id="result" class="result">{textOutput}</output>
+          <output id="result" class="result">
+            {textOutput}
+          </output>
         </div>
       </form>
     </div>
